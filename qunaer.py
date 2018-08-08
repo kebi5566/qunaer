@@ -108,6 +108,6 @@ def savetomongo(result):
 if __name__ == '__main__':
     deps = begin()
     #开启多线程
-    pool=Pool()
+    pool = Pool()
     pool.map(main,[dep for dep in deps])
     client.close()
